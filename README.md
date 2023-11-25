@@ -1,10 +1,48 @@
-# DSAwithSHA3
-<p>
-Name: Snigdha Bose</br>
+# 🛡️ DSA with SHA3 Signature Implementation 🚀
 
-Steps to run-</br>
-[clone git ptoject -> import project->build->Run main.cpp
-OUTPUT
+## Overview
+
+This project demonstrates the implementation of the Digital Signature Algorithm (DSA) using the SHA3 hashing algorithm for secure and efficient message signing. The DSA algorithm provides a secure way to sign digital messages, ensuring data integrity and authenticity.
+
+## Features
+
+- **Secure Hashing:** Utilizes the SHA3 algorithm for secure and reliable message hashing.
+- **Random Key Generation:** Generates random prime numbers for private key components to enhance security.
+- **Key Pair Generation:** Creates public and private key pairs for the DSA algorithm.
+- **Signing Algorithm:** Implements the DSA signing algorithm for generating digital signatures.
+- **Verification Algorithm:** Provides a verification algorithm to validate the authenticity of digital signatures.
+
+## How to Use
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/snigdhab7/DSAwithSHA3.git
+   ```
+
+2. **Import Project:**
+   - Import the project into your preferred C++ development environment.
+
+3. **Build and Run:**
+   - Build and run the `main.cpp` file to execute the DSA with SHA3 signature demonstration.
+
+## Sample Run
+
+```plaintext
+---------------------------------------------SIGNING---------------------------------------------------
+
+ H(m) for message (nkjdshfiueyew87r7436q0091274eiwjendkqwsadnxsakdjawiu64893264) : 49152196162199158251247411121813198198
+ k :968294637493774585166872937050
+ k inverse:1064476948539279090963356264888
+Generated (r,s) pair : (695386754750856376345591505786 , 404235765735534794949256677587)
+---------------------------------------------VERIFICATION---------------------------------------------------
+
+ H(m) for message(nkjdshfiueyew87r7436q0091274eiwjendkqwsadnxsakdjawiu64893264) : 49152196162199158251247411121813198198
+ v:695386754750856376345591505786
+
+ SIGNATURE ACCEPTED!!
+```
+### Real-world example
+```
 ________________________________________________________________________________________________________________________
 p:41682761588380460785873834315179920031991877171793415143878006677653048780254651641566477787849507490526631561144542291525917719920848893213754238477905625799224211724721573332185160335043076449159921936835801768665600208147148908692 09077243730102315704405603706396632748991766437918740907923298627378264293342863321365545034743603, q : 1155813159887942210692943102459, 
 g:37946097973305658833770862310873956194810072766172522259571173633463812123872689352630542378555865295340231186430108374627368809914889242542363338561074088085844121679923158264643095924092304978831111211259432066992413200230181453168 0535523908396017158493072002157596018956175624255808579021614059457102147014900018531742333252032, 
@@ -14,7 +52,8 @@ enter message to be signed: nkjdshfiueyew87r7436q0091274eiwjendkqwsadnxsakdjawiu
 SIGNING 
 H(m) for message (nkjdshfiueyew87r7436q0091274eiwjendkqwsadnxsakdjawiu64893264) : 49152196162199158251247411121813198198 k :968294637493774585166872937050 k inverse:1064476948539279090963356264888 enerated (r,$) pair : (695386754750856376345591505786 , 404235765735534794949256677587) 
 VERIFICATION 
-H(m) for message(nkjdshfiueyew87r7436q0091274eiwjendkqwsadnxsakdjawiu64893264) : 49152196162199158251247411121813198198 v:695386754750856376345591505786 
+H(m) for message(nkjdshfiueyew87r7436q0091274eiwjendkqwsadnxsakdjawiu64893264) : 49152196162199158251247411121813198198 v:695386754750856376345591505786
+
 SIGNATURE ACCEPTED!! 
 ________________________________________________________________________________________________________________________
 
@@ -27,7 +66,17 @@ enter message to be signed: mdncksjdhfoisdjficdijcficn
 SIGNING 
 H(m) for message (mdncksjdhfoisdjficdijcficn) : 10947212301981107318122065143196122122 k :244309481126254869140287083934 k inverse:788203817669864320039012320633 enerated (r,$) pair : (642652283287506210142687204121 , 543868153461933423671223743330) 
 VERIFICATION 
-H(m) for message(nksjfemcdoiere) : 13671821049117324225522522514984247247 v:890759475634171035829558262558 SIGNATURE REJECTED!! 
-_________________________________________________________________________________________________________________________
+H(m) for message(nksjfemcdoiere) : 13671821049117324225522522514984247247 v:890759475634171035829558262558
+
+SIGNATURE REJECTED!! 
+```
+## Dependencies
+
+- GMP Library: The project uses the GMP (GNU Multiple Precision Arithmetic Library) for handling large integers.
 
 
+## Acknowledgments
+
+- Special thanks to the creators of the GMP library for providing a robust platform for multiple precision arithmetic.
+
+Feel free to explore, use, and contribute to this project!
